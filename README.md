@@ -4,6 +4,22 @@
 
 ![Air Bnb Schema (1)](https://github.com/yassin30000/AirBnB/assets/116838492/4f4534bb-0cb9-45e7-a383-0c105eed3950)
 
+## SCHEMA REFERENCES
+
+Ref: "Users"."id" < "Spots"."ownerId"
+
+Ref: "Spots"."id" < "Reviews"."spotId"
+
+Ref: "Users"."id" < "Reviews"."userId"
+
+Ref: "Users"."id" < "Bookings"."userId"
+
+Ref: "Spots"."id" < "SpotImages"."spotId"
+
+Ref: "Reviews"."id" < "ReviewImages"."reviewId"
+
+Ref: "Spots"."id" < "Bookings"."spotId"
+
 ## API Documentation
 
 ## USER AUTHENTICATION/AUTHORIZATION
